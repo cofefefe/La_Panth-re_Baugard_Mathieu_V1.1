@@ -126,7 +126,6 @@ a:hover {
 .d-bloc a .icon-md,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
-.d-bloc h1 a,
 .d-bloc h2 a,
 .d-bloc h3 a,
 .d-bloc h4 a,
@@ -224,7 +223,6 @@ a:hover {
 .l-bloc a .icon-md,
 .l-bloc a .icon-lg,
 .l-bloc a .icon-xl,
-.l-bloc h1 a,
 .l-bloc h2 a,
 .l-bloc h3 a,
 .l-bloc h4 a,
@@ -639,7 +637,7 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
+
 h2,
 h3,
 h4,
@@ -687,7 +685,7 @@ p {
 
 .h1 {
     font-size: 20px;
-    font-family: "Open Sans";
+    font-family: "Helvetica";
 }
 
 .cta-hero {
@@ -722,13 +720,7 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-    color: #333333!important;
-}
 
-h4 {
-    color: #333333!important;
-}
 
 .icons {
     margin-bottom: 14px;
@@ -1039,4 +1031,53 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+/*Ajout dans le cadre de l'optimisation de l'accessibilité et du SEO*/
+
+/*Optimisation footer, supression lien spam, règle style pour présentation correcte du footer*/
+.partnership{
+    display:flex;
+    align-self:center;
+    justify-content:center;
+    width:100%;
+    margin-left:5%;
+    padding-top:5px;
+    align-items:center;
+}
+.partnership ul{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    flex-wrap:wrap;
+}
+footer li, footer a{
+    list-style-type: none;
+    text-decoration:none;
+    padding:0 20px;
+}
+.social{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:10px;
+
+}
+footer .col-sm-12{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+/*optimisation Heading*/
+.black{
+    color:black!important;
+    font-family:"helvetica"
+}
+.center_bloc{
+    text-align:center;
+    color:#FFFFFF!important;
+}
+.col-sm-12 h2{
+    font-size:12px;
 }
